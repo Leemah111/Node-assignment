@@ -31,6 +31,10 @@ mongoose.connect(db,{
        console.log(err);
 
    });
+
+   app.get('/', (req,res)=>{
+       res.send('Welcome to my homepage')
+   });
    
    app.get("/users", async (req, res) => {
        const UserModel = await UserModel.find({});
