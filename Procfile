@@ -1,1 +1,1 @@
-web: nodemon index.js
+echo web: nodemon index.js
